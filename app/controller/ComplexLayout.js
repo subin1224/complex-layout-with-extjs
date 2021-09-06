@@ -11,19 +11,15 @@ Ext.define('CL.controller.ComplexLayout', {
 
     init:   function () {
         this.control({
-            'centerTab #hideit':   {
-                click:  this.toggleWest
-            },
-
             'centerTab button[action=addTab]':   {
                 click:  this.addTab
             }
         });
     },
-
+    
     addTab: function (button) {
         const centerTab = button.up("centerTab");
-
+        
         const tab_count = centerTab.items.length + 1;
         const dynamicTab = centerTab.add({
             title:  tab_count + ' tab',
@@ -33,11 +29,10 @@ Ext.define('CL.controller.ComplexLayout', {
         
         centerTab.setActiveTab(dynamicTab);
     },
-
-    toggleWest: function (target) {
-        console.log('toggleWest 이벤트 !!!!!! ' + target);
-        //const w = Ext.widget('westAccordion');
-        //w.collapsed ? w.expand() : w.collapse();
-        //console.log(target.up("centerTab"));
+    
+    toggleWest: function () {
+        var w = Ext.getCmp('west-panel');
+        //Ext.widget
+        w.collapsed ? w.expand() : w.collapse();
     }
 });

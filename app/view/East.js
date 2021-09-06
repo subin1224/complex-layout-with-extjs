@@ -27,7 +27,11 @@ Ext.define('CL.view.East', {
         xtype:  'button',
         text:   'test',
         tooltip:    '테스트'
-    }]
+    }],
+
+    initComponent: function () {
+        this.callParent(arguments);
+    }
 
 });
 
