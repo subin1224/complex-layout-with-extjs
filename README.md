@@ -80,7 +80,7 @@ Model과 View의 의존성이 완전히 분리될 수 없기 때문에 구조가
 ### 5) Center
 - 내용을 나타내는 구역 입니다.
 - 하단의 Add Tab 버튼을 클릭 하면 close 가 가능한 Tab들이 추가 됩니다.
-- Center Panel의 "Toggle The west region" 이라는 a태그를 클릭하면 West 패널이 Toggle 됩니다. (수정중)
+- Center Panel의 "Toggle The west region" 이라는 a태그를 클릭하면 West 패널이 Toggle 됩니다.
 
 
 ---
