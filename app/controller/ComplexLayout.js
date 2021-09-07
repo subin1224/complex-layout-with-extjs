@@ -1,3 +1,5 @@
+let SEQ = 0 ;
+
 Ext.define('CL.controller.ComplexLayout', {
     //requires: ['CL.view.West'],
     extend: 'Ext.app.Controller',
@@ -21,15 +23,20 @@ Ext.define('CL.controller.ComplexLayout', {
     addTab: function (button) {
         const centerTab = button.up("centerTab");
         
-        const tab_count = centerTab.items.length + 1;
+        const tabCount = centerTab.items.items.length + 1;
+        
+        SEQ =   ( SEQ === 0 ? tabCount : SEQ);
+
         const dynamicTab = centerTab.add({
-            title:  tab_count + ' tab',
+            title:  SEQ + ' tab',
             html:   '<p>Add Tab</p>',
             closable:   true,
         })
         
         centerTab.setActiveTab(dynamicTab);
+        SEQ++;
     },
+
     
     toggleWest: function () {
         //const w = Ext.getCmp('west-panel');

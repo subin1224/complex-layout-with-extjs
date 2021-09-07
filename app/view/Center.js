@@ -25,12 +25,13 @@ Ext.define('CL.view.Center', {
         }
     ],
 
+    
     bbar:    ['->', {
         xtype:  'button',
         text:   'Add Tab',
         action: 'addTab'
     }],
-
+    
     initComponent: function () {
         this.callParent(arguments);
     }
