@@ -1,7 +1,7 @@
 Ext.define('CL.view.West', {
     extend: 'Ext.panel.Panel',
     alias:  'widget.westAccordion',
-    id: 'west-panel',
+    //id: 'west-panel',
     title:  'West',
 
     width: 200,

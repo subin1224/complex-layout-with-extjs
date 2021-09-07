@@ -22,7 +22,6 @@ Ext.define('CL.view.Center', {
             autoScroll: true,
             contentEl:  'center2',
             html:   '<a id="hideit" href="#" onclick="CL.app.getController(\'ComplexLayout\').toggleWest(); return false;">Toggle the west region</a>',
-            
         }
     ],
 

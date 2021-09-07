@@ -1,4 +1,5 @@
 Ext.define('CL.controller.ComplexLayout', {
+    //requires: ['CL.view.West'],
     extend: 'Ext.app.Controller',
     views:  [
         'Center',
@@ -31,8 +32,9 @@ Ext.define('CL.controller.ComplexLayout', {
     },
     
     toggleWest: function () {
-        var w = Ext.getCmp('west-panel');
-        //Ext.widget
+        //const w = Ext.getCmp('west-panel');
+        //const w = Ext.widget('westAccordion);
+        const w = Ext.ComponentQuery.query('westAccordion')[0];
         w.collapsed ? w.expand() : w.collapse();
     }
 });
