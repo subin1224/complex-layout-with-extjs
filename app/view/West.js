@@ -1,7 +1,7 @@
 Ext.define('CL.view.West', {
     extend: 'Ext.panel.Panel',
     alias:  'widget.westAccordion',
-
+    //id: 'west-panel',
     title:  'West',
 
     width: 200,
@@ -24,6 +24,10 @@ Ext.define('CL.view.West', {
         title:  'Information',
         html:   '<p>Some info in here.</p>',
         iconCls:    'info'
-    }]
+    }],
+
+    initComponent: function () {
+        this.callParent(arguments);
+    }
 });
 

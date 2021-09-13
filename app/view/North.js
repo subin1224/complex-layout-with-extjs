@@ -1,11 +1,15 @@
 Ext.define('CL.view.North', {
-    extend: 'Ext.Component',
+    extend: 'Ext.container.Container',
     alias:  'widget.northComponent',
 
     height: 32,
-    
-    autoEl: {
-        tag: 'div',
-        html:'<p>north - generally for menus, toolbars and/or advertisements</p>'
+
+    items :    [{
+        xtype:  'component',
+        html:   '<p>north - generally for menus, toolbars and/or advertisements</p>'
+    }],
+
+    initComponent: function () {
+        this.callParent(arguments);
     }
 });

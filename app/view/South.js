@@ -10,5 +10,9 @@ Ext.define('CL.view.South', {
     height:  100,
     margins: '0 0 0 0',
    
-    html:'<p>south - generally for informational stuff, also could be for status bar</p>'
+    html:'<p>south - generally for informational stuff, also could be for status bar</p>',
+
+    initComponent: function () {
+        this.callParent(arguments);
+    }
 });

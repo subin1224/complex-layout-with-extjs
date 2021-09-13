@@ -15,6 +15,10 @@ Ext.define('CL.view.EastGrid', {
         "tested":   false,
         "version":  0.01,
         "borderWidth":  1
+    },
+
+    initComponent: function () {
+        this.callParent(arguments);
     }
 });
 
